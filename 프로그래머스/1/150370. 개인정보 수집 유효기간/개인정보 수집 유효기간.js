@@ -21,7 +21,7 @@ function solution(today, terms, privacies) {
             pri_month = ((pri_month - 1) % 12) + 1;
         }
 
-        // 🔽 현재 날짜랑 계산된 날짜 비교
+        // 현재 날짜랑 계산된 날짜 비교
         let expired = pri_year < current_year ||
             (pri_year === current_year && pri_month < current_month) ||
             (pri_year === current_year &&
